@@ -5,21 +5,21 @@
    objects = {
       "CommandLine::CommandLine::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_40";
+         buildConfigurationList = "OBJ_49";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_43"
+            "OBJ_52"
          );
          name = "CommandLine";
          productName = "CommandLine";
       };
       "CommandLine::CommandLineKit" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_45";
+         buildConfigurationList = "OBJ_54";
          buildPhases = (
-            "OBJ_48",
-            "OBJ_52"
+            "OBJ_57",
+            "OBJ_61"
          );
          dependencies = (
          );
@@ -35,9 +35,9 @@
       };
       "CommandLine::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_54";
+         buildConfigurationList = "OBJ_63";
          buildPhases = (
-            "OBJ_57"
+            "OBJ_66"
          );
          dependencies = (
          );
@@ -47,14 +47,16 @@
       };
       "FengNiaoDemo::FengNiaoDemo" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_60";
+         buildConfigurationList = "OBJ_69";
          buildPhases = (
-            "OBJ_63",
-            "OBJ_65"
+            "OBJ_72",
+            "OBJ_74"
          );
          dependencies = (
-            "OBJ_68",
-            "OBJ_70"
+            "OBJ_79",
+            "OBJ_81",
+            "OBJ_83",
+            "OBJ_84"
          );
          name = "FengNiaoDemo";
          productName = "FengNiaoDemo";
@@ -68,26 +70,28 @@
       };
       "FengNiaoDemo::FengNiaoDemoPackageTests::ProductTarget" = {
          isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_78";
+         buildConfigurationList = "OBJ_93";
          buildPhases = (
          );
          dependencies = (
-            "OBJ_81"
+            "OBJ_96"
          );
          name = "FengNiaoDemoPackageTests";
          productName = "FengNiaoDemoPackageTests";
       };
       "FengNiaoDemo::FengNiaoDemoTests" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_83";
+         buildConfigurationList = "OBJ_98";
          buildPhases = (
-            "OBJ_86",
-            "OBJ_89"
+            "OBJ_101",
+            "OBJ_104"
          );
          dependencies = (
-            "OBJ_92",
-            "OBJ_93",
-            "OBJ_94"
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113"
          );
          name = "FengNiaoDemoTests";
          productName = "FengNiaoDemoTests";
@@ -99,11 +103,30 @@
          path = "FengNiaoDemoTests.xctest";
          sourceTree = "BUILT_PRODUCTS_DIR";
       };
+      "FengNiaoDemo::FengNiaoKit" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_114";
+         buildPhases = (
+            "OBJ_117",
+            "OBJ_121"
+         );
+         dependencies = (
+         );
+         name = "FengNiaoKit";
+         productName = "FengNiaoKit";
+         productReference = "FengNiaoDemo::FengNiaoKit::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "FengNiaoDemo::FengNiaoKit::Product" = {
+         isa = "PBXFileReference";
+         path = "FengNiaoKit.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
       "FengNiaoDemo::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_72";
+         buildConfigurationList = "OBJ_87";
          buildPhases = (
-            "OBJ_75"
+            "OBJ_90"
          );
          dependencies = (
          );
@@ -124,7 +147,7 @@
             "en"
          );
          mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_34";
+         productRefGroup = "OBJ_41";
          projectDirPath = ".";
          targets = (
             "CommandLine::CommandLine::ProductTarget",
@@ -134,84 +157,570 @@
             "FengNiaoDemo::SwiftPMPackageDescription",
             "FengNiaoDemo::FengNiaoDemoPackageTests::ProductTarget",
             "FengNiaoDemo::FengNiaoDemoTests",
+            "FengNiaoDemo::FengNiaoKit",
+            "PathKit::PathKit",
+            "PathKit::SwiftPMPackageDescription",
             "Rainbow::Rainbow",
             "Rainbow::SwiftPMPackageDescription"
          );
       };
       "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "FengNiaoKit.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemoTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoDemoTests";
+         };
+         name = "Release";
+      };
+      "OBJ_101" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_102",
+            "OBJ_103"
+         );
+      };
+      "OBJ_102" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_103" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_17";
+      };
+      "OBJ_104" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108"
+         );
+      };
+      "OBJ_105" = {
+         isa = "PBXBuildFile";
+         fileRef = "PathKit::PathKit::Product";
+      };
+      "OBJ_106" = {
+         isa = "PBXBuildFile";
+         fileRef = "Rainbow::Rainbow::Product";
+      };
+      "OBJ_107" = {
+         isa = "PBXBuildFile";
+         fileRef = "CommandLine::CommandLineKit::Product";
+      };
+      "OBJ_108" = {
+         isa = "PBXBuildFile";
+         fileRef = "FengNiaoDemo::FengNiaoKit::Product";
+      };
+      "OBJ_109" = {
+         isa = "PBXTargetDependency";
+         target = "FengNiaoDemo::FengNiaoDemo";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "StringsSearchRule.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXTargetDependency";
+         target = "PathKit::PathKit";
+      };
+      "OBJ_111" = {
+         isa = "PBXTargetDependency";
+         target = "Rainbow::Rainbow";
+      };
+      "OBJ_112" = {
+         isa = "PBXTargetDependency";
+         target = "CommandLine::CommandLineKit";
+      };
+      "OBJ_113" = {
+         isa = "PBXTargetDependency";
+         target = "FengNiaoDemo::FengNiaoKit";
+      };
+      "OBJ_114" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_115",
+            "OBJ_116"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_115" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FengNiaoKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoKit";
+         };
+         name = "Debug";
+      };
+      "OBJ_116" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "FengNiaoKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoKit";
+         };
+         name = "Release";
+      };
+      "OBJ_117" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_118",
+            "OBJ_119",
+            "OBJ_120"
+         );
+      };
+      "OBJ_118" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_119" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_12" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_11"
+            "OBJ_13"
+         );
+         name = "FengNiaoDemo";
+         path = "Sources/FengNiaoDemo";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_120" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_121" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_122" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_123",
+            "OBJ_124"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_123" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/PathKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "PathKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "PathKit";
+         };
+         name = "Debug";
+      };
+      "OBJ_124" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/PathKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "PathKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "PathKit";
+         };
+         name = "Release";
+      };
+      "OBJ_125" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_126"
+         );
+      };
+      "OBJ_126" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_127" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_129" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_130",
+            "OBJ_131"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_13" = {
+         isa = "PBXFileReference";
+         path = "main.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_130" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Debug";
+      };
+      "OBJ_131" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_132" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_133"
+         );
+      };
+      "OBJ_133" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_134" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_135",
+            "OBJ_136"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_135" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/Rainbow_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Rainbow";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Rainbow";
+         };
+         name = "Debug";
+      };
+      "OBJ_136" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/Rainbow_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Rainbow";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Rainbow";
+         };
+         name = "Release";
+      };
+      "OBJ_137" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_138",
+            "OBJ_139",
+            "OBJ_140",
+            "OBJ_141",
+            "OBJ_142",
+            "OBJ_143",
+            "OBJ_144",
+            "OBJ_145",
+            "OBJ_146",
+            "OBJ_147",
+            "OBJ_148"
+         );
+      };
+      "OBJ_138" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_139" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_14" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_15"
          );
          name = "Tests";
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_100" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_101" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_102" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_103" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_104" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_105" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_106" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_107" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
-      };
-      "OBJ_108" = {
+      "OBJ_140" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_26";
       };
-      "OBJ_109" = {
+      "OBJ_141" = {
          isa = "PBXBuildFile";
          fileRef = "OBJ_27";
       };
-      "OBJ_11" = {
+      "OBJ_142" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_143" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_29";
+      };
+      "OBJ_144" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_145" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_31";
+      };
+      "OBJ_146" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_147" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_33";
+      };
+      "OBJ_148" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_34";
+      };
+      "OBJ_149" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_15" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_12",
-            "OBJ_13"
+            "OBJ_16",
+            "OBJ_17"
          );
          name = "FengNiaoDemoTests";
          path = "Tests/FengNiaoDemoTests";
          sourceTree = "SOURCE_ROOT";
       };
-      "OBJ_110" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_112" = {
+      "OBJ_151" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_113",
-            "OBJ_114"
+            "OBJ_152",
+            "OBJ_153"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_113" = {
+      "OBJ_152" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -229,7 +738,7 @@
          };
          name = "Debug";
       };
-      "OBJ_114" = {
+      "OBJ_153" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
             LD = "/usr/bin/true";
@@ -247,77 +756,46 @@
          };
          name = "Release";
       };
-      "OBJ_115" = {
+      "OBJ_154" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_116"
+            "OBJ_155"
          );
       };
-      "OBJ_116" = {
+      "OBJ_155" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_16";
+         fileRef = "OBJ_23";
       };
-      "OBJ_12" = {
+      "OBJ_16" = {
          isa = "PBXFileReference";
          path = "FengNiaoDemoTests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_13" = {
+      "OBJ_17" = {
          isa = "PBXFileReference";
          path = "XCTestManifests.swift";
          sourceTree = "<group>";
       };
-      "OBJ_14" = {
+      "OBJ_18" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_15",
-            "OBJ_28"
+            "OBJ_19",
+            "OBJ_22",
+            "OBJ_35"
          );
          name = "Dependencies";
          path = "";
          sourceTree = "<group>";
       };
-      "OBJ_15" = {
+      "OBJ_19" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_16",
-            "OBJ_17",
-            "OBJ_18",
-            "OBJ_19",
             "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24",
-            "OBJ_25",
-            "OBJ_26",
-            "OBJ_27"
+            "OBJ_21"
          );
-         name = "Rainbow 3.1.4";
-         path = ".build/checkouts/Rainbow-2498430265204891872/Sources";
+         name = "PathKit 0.9.2";
+         path = ".build/checkouts/PathKit--4941014068964996066/Sources";
          sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_16" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/zhangqiang/Desktop/FengNiaoDemo/.build/checkouts/Rainbow-2498430265204891872/Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_17" = {
-         isa = "PBXFileReference";
-         path = "BackgroundColor.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "CodesParser.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "Color.swift";
-         sourceTree = "<group>";
       };
       "OBJ_2" = {
          isa = "XCConfigurationList";
@@ -330,64 +808,72 @@
       };
       "OBJ_20" = {
          isa = "PBXFileReference";
-         path = "ControlCode.swift";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/zhangqiang/Desktop/FengNiaoDemo/.build/checkouts/PathKit--4941014068964996066/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_21" = {
          isa = "PBXFileReference";
-         path = "ModesExtractor.swift";
+         path = "PathKit.swift";
          sourceTree = "<group>";
       };
       "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "OutputTarget.swift";
-         sourceTree = "<group>";
+         isa = "PBXGroup";
+         children = (
+            "OBJ_23",
+            "OBJ_24",
+            "OBJ_25",
+            "OBJ_26",
+            "OBJ_27",
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_30",
+            "OBJ_31",
+            "OBJ_32",
+            "OBJ_33",
+            "OBJ_34"
+         );
+         name = "Rainbow 3.1.4";
+         path = ".build/checkouts/Rainbow-2498430265204891872/Sources";
+         sourceTree = "SOURCE_ROOT";
       };
       "OBJ_23" = {
          isa = "PBXFileReference";
-         path = "Rainbow.swift";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/zhangqiang/Desktop/FengNiaoDemo/.build/checkouts/Rainbow-2498430265204891872/Package.swift";
          sourceTree = "<group>";
       };
       "OBJ_24" = {
          isa = "PBXFileReference";
-         path = "String+Rainbow.swift";
+         path = "BackgroundColor.swift";
          sourceTree = "<group>";
       };
       "OBJ_25" = {
          isa = "PBXFileReference";
-         path = "StringGenerator.swift";
+         path = "CodesParser.swift";
          sourceTree = "<group>";
       };
       "OBJ_26" = {
          isa = "PBXFileReference";
-         path = "Style.swift";
+         path = "Color.swift";
          sourceTree = "<group>";
       };
       "OBJ_27" = {
          isa = "PBXFileReference";
-         path = "XcodeColorsSupport.swift";
+         path = "ControlCode.swift";
          sourceTree = "<group>";
       };
       "OBJ_28" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_29",
-            "OBJ_33"
-         );
-         name = "CommandLine 3.0.0-pre1";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "ModesExtractor.swift";
+         sourceTree = "<group>";
       };
       "OBJ_29" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32"
-         );
-         name = "CommandLineKit";
-         path = ".build/checkouts/CommandLine-1731426260682044801/CommandLineKit";
-         sourceTree = "SOURCE_ROOT";
+         isa = "PBXFileReference";
+         path = "OutputTarget.swift";
+         sourceTree = "<group>";
       };
       "OBJ_3" = {
          isa = "XCBuildConfiguration";
@@ -430,37 +916,64 @@
       };
       "OBJ_30" = {
          isa = "PBXFileReference";
-         path = "CommandLine.swift";
+         path = "Rainbow.swift";
          sourceTree = "<group>";
       };
       "OBJ_31" = {
          isa = "PBXFileReference";
-         path = "Option.swift";
+         path = "String+Rainbow.swift";
          sourceTree = "<group>";
       };
       "OBJ_32" = {
          isa = "PBXFileReference";
-         path = "StringExtensions.swift";
+         path = "StringGenerator.swift";
          sourceTree = "<group>";
       };
       "OBJ_33" = {
          isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Users/zhangqiang/Desktop/FengNiaoDemo/.build/checkouts/CommandLine-1731426260682044801/Package.swift";
+         path = "Style.swift";
          sourceTree = "<group>";
       };
       "OBJ_34" = {
+         isa = "PBXFileReference";
+         path = "XcodeColorsSupport.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
          isa = "PBXGroup";
          children = (
-            "FengNiaoDemo::FengNiaoDemoTests::Product",
-            "CommandLine::CommandLineKit::Product",
-            "FengNiaoDemo::FengNiaoDemo::Product",
-            "Rainbow::Rainbow::Product"
+            "OBJ_36",
+            "OBJ_40"
          );
-         name = "Products";
+         name = "CommandLine 3.0.0-pre1";
          path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_36" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_37",
+            "OBJ_38",
+            "OBJ_39"
+         );
+         name = "CommandLineKit";
+         path = ".build/checkouts/CommandLine-1731426260682044801/CommandLineKit";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "CommandLine.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "Option.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions.swift";
+         sourceTree = "<group>";
       };
       "OBJ_4" = {
          isa = "XCBuildConfiguration";
@@ -495,149 +1008,62 @@
          name = "Release";
       };
       "OBJ_40" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_41",
-            "OBJ_42"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/zhangqiang/Desktop/FengNiaoDemo/.build/checkouts/CommandLine-1731426260682044801/Package.swift";
+         sourceTree = "<group>";
       };
       "OBJ_41" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
+         isa = "PBXGroup";
+         children = (
+            "FengNiaoDemo::FengNiaoDemo::Product",
+            "PathKit::PathKit::Product",
+            "FengNiaoDemo::FengNiaoKit::Product",
+            "CommandLine::CommandLineKit::Product",
+            "FengNiaoDemo::FengNiaoDemoTests::Product",
+            "Rainbow::Rainbow::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
       };
-      "OBJ_42" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_43" = {
-         isa = "PBXTargetDependency";
-         target = "CommandLine::CommandLineKit";
-      };
-      "OBJ_45" = {
+      "OBJ_49" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_46",
-            "OBJ_47"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_46" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/CommandLineKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "CommandLineKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "CommandLineKit";
-         };
-         name = "Debug";
-      };
-      "OBJ_47" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/CommandLineKit_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "CommandLineKit";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "3.0";
-            TARGET_NAME = "CommandLineKit";
-         };
-         name = "Release";
-      };
-      "OBJ_48" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_49",
             "OBJ_50",
             "OBJ_51"
          );
-      };
-      "OBJ_49" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
       "OBJ_5" = {
          isa = "PBXGroup";
          children = (
             "OBJ_6",
             "OBJ_7",
-            "OBJ_10",
             "OBJ_14",
-            "OBJ_34"
+            "OBJ_18",
+            "OBJ_41"
          );
          path = "";
          sourceTree = "<group>";
       };
       "OBJ_50" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
       };
       "OBJ_51" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
       };
       "OBJ_52" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
+         isa = "PBXTargetDependency";
+         target = "CommandLine::CommandLineKit";
       };
       "OBJ_54" = {
          isa = "XCConfigurationList";
@@ -651,48 +1077,92 @@
       "OBJ_55" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            LD = "/usr/bin/true";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/CommandLineKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
             OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "3",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CommandLineKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
             );
             SWIFT_VERSION = "3.0";
+            TARGET_NAME = "CommandLineKit";
          };
          name = "Debug";
       };
       "OBJ_56" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            LD = "/usr/bin/true";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/CommandLineKit_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
             OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "3",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CommandLineKit";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
             );
             SWIFT_VERSION = "3.0";
+            TARGET_NAME = "CommandLineKit";
          };
          name = "Release";
       };
       "OBJ_57" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_58"
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60"
          );
       };
       "OBJ_58" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_59" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
       };
       "OBJ_6" = {
          isa = "PBXFileReference";
@@ -701,391 +1171,319 @@
          sourceTree = "<group>";
       };
       "OBJ_60" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_61" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_63" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_61",
-            "OBJ_62"
+            "OBJ_64",
+            "OBJ_65"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_61" = {
+      "OBJ_64" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemo_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
+            LD = "/usr/bin/true";
             OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
+               "-swift-version",
+               "3",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
             );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "FengNiaoDemo";
+            SWIFT_VERSION = "3.0";
          };
          name = "Debug";
       };
-      "OBJ_62" = {
+      "OBJ_65" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemo_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-               "@executable_path"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
+            LD = "/usr/bin/true";
             OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
+               "-swift-version",
+               "3",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
             );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
-            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "FengNiaoDemo";
+            SWIFT_VERSION = "3.0";
          };
          name = "Release";
       };
-      "OBJ_63" = {
+      "OBJ_66" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_64"
-         );
-      };
-      "OBJ_64" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_9";
-      };
-      "OBJ_65" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_66",
             "OBJ_67"
          );
       };
-      "OBJ_66" = {
-         isa = "PBXBuildFile";
-         fileRef = "Rainbow::Rainbow::Product";
-      };
       "OBJ_67" = {
          isa = "PBXBuildFile";
-         fileRef = "CommandLine::CommandLineKit::Product";
+         fileRef = "OBJ_40";
       };
-      "OBJ_68" = {
-         isa = "PBXTargetDependency";
-         target = "Rainbow::Rainbow";
+      "OBJ_69" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_70",
+            "OBJ_71"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
       };
       "OBJ_7" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_8"
+            "OBJ_8",
+            "OBJ_12"
          );
          name = "Sources";
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
       "OBJ_70" = {
-         isa = "PBXTargetDependency";
-         target = "CommandLine::CommandLineKit";
-      };
-      "OBJ_72" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_73",
-            "OBJ_74"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_73" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
             );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemo_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
             SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoDemo";
          };
          name = "Debug";
       };
-      "OBJ_74" = {
+      "OBJ_71" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "4.2",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
             );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemo_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
             SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoDemo";
          };
          name = "Release";
       };
-      "OBJ_75" = {
+      "OBJ_72" = {
          isa = "PBXSourcesBuildPhase";
          files = (
-            "OBJ_76"
+            "OBJ_73"
          );
+      };
+      "OBJ_73" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_13";
+      };
+      "OBJ_74" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+            "OBJ_78"
+         );
+      };
+      "OBJ_75" = {
+         isa = "PBXBuildFile";
+         fileRef = "PathKit::PathKit::Product";
       };
       "OBJ_76" = {
          isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
+         fileRef = "Rainbow::Rainbow::Product";
+      };
+      "OBJ_77" = {
+         isa = "PBXBuildFile";
+         fileRef = "CommandLine::CommandLineKit::Product";
       };
       "OBJ_78" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_79",
-            "OBJ_80"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
+         isa = "PBXBuildFile";
+         fileRef = "FengNiaoDemo::FengNiaoKit::Product";
       };
       "OBJ_79" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
+         isa = "PBXTargetDependency";
+         target = "PathKit::PathKit";
       };
       "OBJ_8" = {
          isa = "PBXGroup";
          children = (
-            "OBJ_9"
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11"
          );
-         name = "FengNiaoDemo";
-         path = "Sources/FengNiaoDemo";
+         name = "FengNiaoKit";
+         path = "Sources/FengNiaoKit";
          sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_80" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
       };
       "OBJ_81" = {
          isa = "PBXTargetDependency";
-         target = "FengNiaoDemo::FengNiaoDemoTests";
-      };
-      "OBJ_83" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_84",
-            "OBJ_85"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_84" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemoTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "FengNiaoDemoTests";
-         };
-         name = "Debug";
-      };
-      "OBJ_85" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemoTests_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.2";
-            TARGET_NAME = "FengNiaoDemoTests";
-         };
-         name = "Release";
-      };
-      "OBJ_86" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_87",
-            "OBJ_88"
-         );
-      };
-      "OBJ_87" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_12";
-      };
-      "OBJ_88" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
-      };
-      "OBJ_89" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_90",
-            "OBJ_91"
-         );
-      };
-      "OBJ_9" = {
-         isa = "PBXFileReference";
-         path = "main.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_90" = {
-         isa = "PBXBuildFile";
-         fileRef = "Rainbow::Rainbow::Product";
-      };
-      "OBJ_91" = {
-         isa = "PBXBuildFile";
-         fileRef = "CommandLine::CommandLineKit::Product";
-      };
-      "OBJ_92" = {
-         isa = "PBXTargetDependency";
-         target = "FengNiaoDemo::FengNiaoDemo";
-      };
-      "OBJ_93" = {
-         isa = "PBXTargetDependency";
          target = "Rainbow::Rainbow";
       };
-      "OBJ_94" = {
+      "OBJ_83" = {
          isa = "PBXTargetDependency";
          target = "CommandLine::CommandLineKit";
       };
-      "OBJ_95" = {
+      "OBJ_84" = {
+         isa = "PBXTargetDependency";
+         target = "FengNiaoDemo::FengNiaoKit";
+      };
+      "OBJ_87" = {
          isa = "XCConfigurationList";
          buildConfigurations = (
-            "OBJ_96",
-            "OBJ_97"
+            "OBJ_88",
+            "OBJ_89"
          );
          defaultConfigurationIsVisible = "0";
          defaultConfigurationName = "Release";
       };
-      "OBJ_96" = {
+      "OBJ_88" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/Rainbow_Info.plist";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
+            LD = "/usr/bin/true";
             OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "Rainbow";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "4.0";
-            TARGET_NAME = "Rainbow";
+            SWIFT_VERSION = "4.2";
          };
          name = "Debug";
       };
-      "OBJ_97" = {
+      "OBJ_89" = {
          isa = "XCBuildConfiguration";
          buildSettings = {
-            ENABLE_TESTABILITY = "YES";
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4.2",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk"
+            );
+            SWIFT_VERSION = "4.2";
+         };
+         name = "Release";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Extensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_91"
+         );
+      };
+      "OBJ_91" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_93" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_94",
+            "OBJ_95"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_94" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_95" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_96" = {
+         isa = "PBXTargetDependency";
+         target = "FengNiaoDemo::FengNiaoDemoTests";
+      };
+      "OBJ_98" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_99",
+            "OBJ_100"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_99" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
             FRAMEWORK_SEARCH_PATHS = (
                "$(inherited)",
                "$(PLATFORM_DIR)/Developer/Library/Frameworks"
@@ -1093,10 +1491,11 @@
             HEADER_SEARCH_PATHS = (
                "$(inherited)"
             );
-            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/Rainbow_Info.plist";
+            INFOPLIST_FILE = "FengNiaoDemo.xcodeproj/FengNiaoDemoTests_Info.plist";
             LD_RUNPATH_SEARCH_PATHS = (
                "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
             );
             OTHER_CFLAGS = (
                "$(inherited)"
@@ -1107,44 +1506,51 @@
             OTHER_SWIFT_FLAGS = (
                "$(inherited)"
             );
-            PRODUCT_BUNDLE_IDENTIFIER = "Rainbow";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
             SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
                "$(inherited)"
             );
-            SWIFT_VERSION = "4.0";
-            TARGET_NAME = "Rainbow";
+            SWIFT_VERSION = "4.2";
+            TARGET_NAME = "FengNiaoDemoTests";
          };
-         name = "Release";
+         name = "Debug";
       };
-      "OBJ_98" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_99",
-            "OBJ_100",
-            "OBJ_101",
-            "OBJ_102",
-            "OBJ_103",
-            "OBJ_104",
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109"
+      "PathKit::PathKit" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_122";
+         buildPhases = (
+            "OBJ_125",
+            "OBJ_127"
          );
+         dependencies = (
+         );
+         name = "PathKit";
+         productName = "PathKit";
+         productReference = "PathKit::PathKit::Product";
+         productType = "com.apple.product-type.framework";
       };
-      "OBJ_99" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
+      "PathKit::PathKit::Product" = {
+         isa = "PBXFileReference";
+         path = "PathKit.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "PathKit::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_129";
+         buildPhases = (
+            "OBJ_132"
+         );
+         dependencies = (
+         );
+         name = "PathKitPackageDescription";
+         productName = "PathKitPackageDescription";
+         productType = "com.apple.product-type.framework";
       };
       "Rainbow::Rainbow" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_95";
+         buildConfigurationList = "OBJ_134";
          buildPhases = (
-            "OBJ_98",
-            "OBJ_110"
+            "OBJ_137",
+            "OBJ_149"
          );
          dependencies = (
          );
@@ -1160,9 +1566,9 @@
       };
       "Rainbow::SwiftPMPackageDescription" = {
          isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_112";
+         buildConfigurationList = "OBJ_151";
          buildPhases = (
-            "OBJ_115"
+            "OBJ_154"
          );
          dependencies = (
          );

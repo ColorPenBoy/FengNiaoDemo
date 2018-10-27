@@ -1,6 +1,7 @@
 import Foundation
 import CommandLineKit
 import Rainbow
+import FengNiaoKit
 
 print("Hello, Swift Command Line Tool!")
 
@@ -61,4 +62,4 @@ let fileExtensions = fileExtensionOption.value ?? ["swift", "m", "mm", "xib", "s
 let excludedPath = excludePathsOption.value ?? []
 
 
-
+Foo().bar()
